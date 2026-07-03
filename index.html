@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="老小孩（leige）的个人主页 — 记录生活、游戏与有趣的想法。">
+    <meta name="author" content="leige">
+    <meta name="theme-color" content="#0f1020">
+    <title>老小孩 · leige 的个人主页</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧒</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 进度条 / 背景 -->
+    <div class="bg-gradient" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- 导航栏 -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#hero" class="brand" aria-label="返回顶部">
+                <span class="brand-emoji">🧒</span>
+                <span class="brand-text">老小孩<span class="brand-dot">.</span>site</span>
+            </a>
+            <nav class="nav-links" aria-label="主导航">
+                <a href="#about">关于</a>
+                <a href="#games">我的游戏</a>
+                <a href="#works">作品</a>
+                <a href="#contact">联系</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="切换菜单" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="container hero-inner">
+                <div class="hero-avatar" aria-hidden="true">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-emoji">🧒</div>
+                </div>
+                <div class="hero-text">
+                    <p class="hero-greet">你好，我是</p>
+                    <h1 class="hero-name">老小孩<span class="wave">👋</span></h1>
+                    <p class="hero-tag">leige · 一个永远对世界保持好奇的人</p>
+                    <p class="hero-desc">
+                        喜欢琢磨规律、做点小玩意儿。这里是我放想法、放游戏、放作品的小角落。
+                        欢迎随便逛逛，也欢迎来找我玩「老小孩找规律」。
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://game.leige.online" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            🎮 玩「老小孩找规律」
+                        </a>
+                        <a href="#about" class="btn btn-ghost">了解更多 ↓</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-hint" aria-label="向下滚动">
+                <span class="mouse"><span class="wheel"></span></span>
+            </a>
+        </section>
+
+        <!-- 关于我 -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title"><span class="title-num">01</span> 关于我</h2>
+                <p class="section-subtitle">About Me</p>
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <div class="about-icon">💡</div>
+                        <h3>爱琢磨</h3>
+                        <p>看到任何有趣的规律、数字、图案，总忍不住要想"为什么"。这是「老小孩找规律」最初的由来。</p>
+                    </div>
+                    <div class="about-card reveal">
+                        <div class="about-icon">🛠️</div>
+                        <h3>爱折腾</h3>
+                        <p>写点代码、做点小工具、搭点小网站。把脑子里的想法变成能跑起来的东西，是最大的乐趣。</p>
+                    </div>
+                    <div class="about-card reveal">
+                        <div class="about-icon">🧒</div>
+                        <h3>老小孩</h3>
+                        <p>年纪在长，好奇心没变。相信大人也可以用小孩的眼睛看世界——一切都很新鲜。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 我的游戏 -->
+        <section class="section section-games" id="games">
+            <div class="container">
+                <h2 class="section-title"><span class="title-num">02</span> 我的游戏</h2>
+                <p class="section-subtitle">My Games</p>
+
+                <!-- 主推游戏卡片 -->
+                <article class="game-feature reveal">
+                    <div class="game-feature-bg" aria-hidden="true"></div>
+                    <div class="game-feature-body">
+                        <div class="game-badge">⭐ 主推</div>
+                        <h3 class="game-title">老小孩找规律</h3>
+                        <p class="game-tagline">看一眼，找出藏在序列里的秘密。</p>
+                        <p class="game-desc">
+                            一款考验观察力与逻辑的小游戏：每一关给你一组数字、图形或颜色序列，
+                            你来猜出下一个是什么。从简单到烧脑，越玩越上头——
+                            不管你是真小孩，还是像我一样的"老小孩"，都能从中找到乐趣。
+                        </p>
+                        <ul class="game-meta">
+                            <li><span>🎯</span> 关卡模式</li>
+                            <li><span>⏱️</span> 计时挑战</li>
+                            <li><span>🏆</span> 本地最高分</li>
+                            <li><span>📱</span> 手机电脑都能玩</li>
+                        </ul>
+                        <div class="game-actions">
+                            <a href="https://game.leige.online" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                                ▶ 立即开始游戏
+                            </a>
+                            <span class="game-url">game.leige.online</span>
+                        </div>
+                    </div>
+                    <div class="game-feature-visual" aria-hidden="true">
+                        <div class="pattern-demo">
+                            <span class="pd-item">2</span>
+                            <span class="pd-item">4</span>
+                            <span class="pd-item">6</span>
+                            <span class="pd-item">8</span>
+                            <span class="pd-item pd-q">?</span>
+                        </div>
+                        <div class="pattern-demo pattern-demo-2">
+                            <span class="pd-dot pd-red"></span>
+                            <span class="pd-dot pd-blue"></span>
+                            <span class="pd-dot pd-red"></span>
+                            <span class="pd-dot pd-blue"></span>
+                            <span class="pd-dot pd-q">?</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 更多游戏占位（待发布） -->
+                <div class="game-more">
+                    <div class="game-placeholder reveal">
+                        <div class="gp-icon">🚧</div>
+                        <h4>更多小游戏</h4>
+                        <p>正在构思与开发中，敬请期待。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作品 / 链接 -->
+        <section class="section" id="works">
+            <div class="container">
+                <h2 class="section-title"><span class="title-num">03</span> 作品与链接</h2>
+                <p class="section-subtitle">Works &amp; Links</p>
+                <div class="works-grid">
+                    <a href="https://game.leige.online" target="_blank" rel="noopener noreferrer" class="work-card reveal">
+                        <div class="work-icon">🎮</div>
+                        <h3>老小孩找规律</h3>
+                        <p>我的主打小游戏，找规律闯关。</p>
+                        <span class="work-link">game.leige.online →</span>
+                    </a>
+                    <a href="https://www.leige.site" class="work-card reveal">
+                        <div class="work-icon">🏠</div>
+                        <h3>个人主页</h3>
+                        <p>就是你正在看的这个页面。</p>
+                        <span class="work-link">www.leige.site →</span>
+                    </a>
+                    <div class="work-card work-card-soon reveal">
+                        <div class="work-icon">✨</div>
+                        <h3>更多作品</h3>
+                        <p>新的小玩意儿正在路上。</p>
+                        <span class="work-link">coming soon</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系 -->
+        <section class="section section-contact" id="contact">
+            <div class="container contact-inner">
+                <h2 class="section-title section-title-center"><span class="title-num">04</span> 找到我</h2>
+                <p class="section-subtitle">Get in Touch</p>
+                <p class="contact-text">
+                    想反馈游戏建议、报个 bug，或者就是想聊聊天？
+                    欢迎随时来找我。一起做个永远好奇的老小孩。
+                </p>
+                <div class="contact-actions">
+                    <a href="mailto:hello@leige.site" class="btn btn-primary">✉️ 发邮件给我</a>
+                    <a href="https://game.leige.online" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">🎮 去玩游戏</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-emoji">🧒</span>
+                <span>老小孩 · leige</span>
+            </div>
+            <p class="footer-text">
+                © <span id="year">2026</span> leige. Made with ❤️ &amp; 好奇心.
+            </p>
+            <nav class="footer-links" aria-label="页脚导航">
+                <a href="#about">关于</a>
+                <a href="https://game.leige.online" target="_blank" rel="noopener noreferrer">游戏</a>
+                <a href="#contact">联系</a>
+            </nav>
+
+            <!-- 备案信息（悬挂于页脚底部） -->
+            <div class="beian">
+                <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer"
+                   title="工信部ICP/IP地址/域名信息备案管理系统">
+                    鄂ICP备2025092414号-2
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <button id="backToTop" class="back-to-top" aria-label="回到顶部">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
