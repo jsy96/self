@@ -65,12 +65,7 @@ if not "!COMMIT_RC!"=="0" (
 )
 
 echo.
-echo === Step 3/3: Pushing to remotes ===
-git push github master
-if errorlevel 1 (
-    echo [ERROR] git push github master failed.
-    exit /b 1
-)
+echo === Step 3/3: Pushing to remote ===
 git push origin master
 if errorlevel 1 (
     echo [ERROR] git push origin master failed.
