@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WaytoAGI 近期活动整理 · 滚动更新</title>
+<meta name="description" content="整理自 WaytoAGI 飞书知识库，覆盖近期与未来一个月的活动、训练营、共学、大赛与合作。">
+<style>
+  :root{
+    --bg:#0b1020; --bg-2:#111a33;
+    --surface:#ffffff; --surface-2:#f6f8fc;
+    --ink:#1a2238; --ink-2:#5a6478; --line:#e6eaf2;
+    --brand:#6c5ce7; --brand-2:#8e7bff; --accent:#ff7a45;
+    --green:#1abc9c; --blue:#3b82f6; --gold:#f5b301;
+    --radius:16px; --shadow:0 10px 30px -12px rgba(20,30,80,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--surface-2);line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+
+  .hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%, rgba(255,122,69,.35), transparent 60%),radial-gradient(900px 500px at 5% 110%, rgba(108,92,231,.45), transparent 55%),linear-gradient(180deg,#0b1020 0%, #131c3a 100%);overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);background-size:42px 42px;mask-image:radial-gradient(ellipse at 50% 0%, #000 30%, transparent 75%);pointer-events:none}
+  .hero-inner{position:relative;max-width:1140px;margin:0 auto;padding:72px 24px 64px}
+  .crumb{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:13px;color:#cdd6f4;letter-spacing:.5px}
+  .crumb .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  h1{font-size:clamp(30px,5vw,52px);line-height:1.15;margin:22px 0 14px;letter-spacing:-.5px;font-weight:800}
+  h1 .grad{background:linear-gradient(92deg,#fff 0%, #ffd9c2 40%, #b7a6ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{font-size:17px;color:#c8d0e8;max-width:760px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;max-width:780px}
+  .stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 16px;backdrop-filter:blur(6px)}
+  .stat .n{font-size:22px;font-weight:800;color:#fff}
+  .stat .l{font-size:12px;color:#aebbd9;margin-top:2px}
+  .updated{margin-top:22px;font-size:12.5px;color:#8e9ac0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .updated .tag-live{padding:2px 9px;border-radius:6px;background:rgba(26,188,156,.18);color:#5fe3c1;border:1px solid rgba(26,188,156,.35);font-weight:700;letter-spacing:.5px}
+
+  .wrap{max-width:1140px;margin:0 auto;padding:40px 24px 8px}
+  .section-head{display:flex;align-items:center;gap:14px;margin:46px 0 20px}
+  .section-head .ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:var(--surface);box-shadow:var(--shadow)}
+  .section-head h2{font-size:24px;margin:0;font-weight:800}
+  .section-head .sub{font-size:13px;color:var(--ink-2);margin-top:2px}
+  .section-head .bar{flex:1;height:1px;background:var(--line)}
+
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -16px rgba(20,30,80,.28);border-color:#d7def0}
+  .card .tag{align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.6px;padding:4px 10px;border-radius:999px;background:#eef0ff;color:var(--brand)}
+  .card.new::after{content:"NEW";position:absolute;top:14px;right:14px;font-size:10px;font-weight:800;letter-spacing:1px;color:#fff;background:var(--accent);padding:3px 8px;border-radius:6px;box-shadow:0 4px 12px rgba(255,122,69,.5)}
+  .card h3{font-size:17px;margin:2px 0 0;line-height:1.4;font-weight:700}
+  .meta{font-size:13px;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:10px 14px}
+  .desc{font-size:13.5px;color:#3c465c}
+  .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px}
+  .btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:8px 14px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);transition:all .15s ease}
+  .btn:hover{border-color:var(--brand);color:var(--brand)}
+  .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border-color:transparent;color:#fff}
+  .btn.primary:hover{filter:brightness(1.06);color:#fff}
+  .arrow{transition:transform .15s ease}
+  .btn:hover .arrow{transform:translateX(2px)}
+
+  .card.feature{background:linear-gradient(180deg,#1a2342 0%, #11182f 100%);color:#fff;border-color:rgba(255,255,255,.1)}
+  .card.feature h3{color:#fff}
+  .card.feature .desc{color:#c3ccea}
+  .card.feature .meta{color:#9fadc9}
+  .card.feature .tag{background:rgba(255,255,255,.12);color:#ffd9c2}
+  .card.feature .btn{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff}
+  .card.feature .btn.primary{background:linear-gradient(135deg,var(--accent),#ff9d6c);border-color:transparent}
+
+  .tone-opc .ico{background:linear-gradient(135deg,#6c5ce7,#8e7bff);color:#fff}
+  .tone-camp .ico{background:linear-gradient(135deg,#3b82f6,#6aa3ff);color:#fff}
+  .tone-learn .ico{background:linear-gradient(135deg,#1abc9c,#3fd4b3);color:#fff}
+  .tone-contest .ico{background:linear-gradient(135deg,#f5b301,#ffce4d);color:#3a2c00}
+  .tone-brand .ico{background:linear-gradient(135deg,#ff7a45,#ff9d6c);color:#fff}
+  .tone-coop .ico{background:linear-gradient(135deg,#0ea5b7,#22c3d4);color:#fff}
+
+  .refs{margin-top:48px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow)}
+  .refs h3{margin:0 0 12px;font-size:16px}
+  .ref-list{display:flex;flex-wrap:wrap;gap:10px}
+  .ref-list .btn{background:var(--surface-2)}
+
+  footer{margin-top:60px;background:var(--bg);color:#9aa4c2;padding:36px 24px 28px;text-align:center}
+  footer .f-links{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;margin-bottom:14px;font-size:13px}
+  footer .f-links a{color:#cdd6f4}
+  footer .f-links a:hover{color:#fff}
+  .icp{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#9aa4c2;padding:8px 16px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+  .icp a{color:#cdd6f4;border-bottom:1px dashed rgba(255,255,255,.25)}
+  .icp a:hover{color:#fff;border-bottom-color:#fff}
+  .copy{font-size:12px;color:#6b7693;margin-top:10px}
+
+  #status{padding:60px 24px;text-align:center;color:var(--ink-2);font-size:15px}
+  #status .big{font-size:40px;display:block;margin-bottom:10px}
+  #status .hint{font-size:13px;color:#8a93ad;margin-top:12px;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.7}
+  #status code{background:#eef0ff;color:var(--brand);padding:2px 7px;border-radius:5px;font-size:12.5px}
+
+  @media (max-width:640px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .hero-inner{padding:54px 18px 44px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="crumb"><span class="dot"></span>数据来源 · WaytoAGI 飞书知识库（自动同步）</span>
+    <h1><span class="grad">WaytoAGI 活动整理</span><br>近期 + 未来一个月主题全景</h1>
+    <p class="lede" id="lede">
+      汇总自 WaytoAGI 飞书知识库，覆盖近期与未来一个月的活动、训练营、共学沙龙、创作大赛与战略合作，按主题分类整理。
+    </p>
+    <div class="stats" id="stats"></div>
+    <div class="updated" id="updated"></div>
+  </div>
+</header>
+
+<main class="wrap" id="main">
+  <div id="status"><span class="big">⏳</span>正在加载活动数据…<div class="hint">若长时间无响应，可能正在通过本地 <code>file://</code> 打开。请通过本地 HTTP 服务器或部署后的网址访问，以激活自动数据加载。</div></div>
+</main>
+
+<footer id="footer" style="display:none">
+  <div class="f-links">
+    <a href="https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb" target="_blank" rel="noopener">WaytoAGI 知识库</a>
+    <a href="https://waytoagi.com" target="_blank" rel="noopener">WaytoAGI 官网</a>
+    <a href="#" onclick="scrollTo({top:0,behavior:'smooth'});return false">回到顶部</a>
+  </div>
+  <div class="icp" id="icp"></div>
+  <div class="copy" id="copy"></div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var DATA_URL = "activities.json";
+
+  function el(tag, cls, html){
+    var e = document.createElement(tag);
+    if(cls) e.className = cls;
+    if(html != null) e.innerHTML = html;
+    return e;
+  }
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g, function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+
+  function renderStats(stats){
+    var box = document.getElementById("stats");
+    box.innerHTML = "";
+    (stats||[]).forEach(function(s){
+      var c = el("div","stat");
+      c.appendChild(el("div","n",esc(s.n)));
+      c.appendChild(el("div","l",esc(s.l)));
+      box.appendChild(c);
+    });
+  }
+
+  function renderCard(item, isFeature){
+    var card = el("article", "card" + (isFeature ? " feature" : "") + (item.new ? " new" : ""));
+    if(item.tag) card.appendChild(el("span","tag",esc(item.tag)));
+    card.appendChild(el("h3","",esc(item.title)));
+    if(item.date || item.location){
+      var m = el("div","meta");
+      if(item.date) m.appendChild(el("span","", "🗓 " + esc(item.date)));
+      if(item.location) m.appendChild(el("span","", "📍 " + esc(item.location)));
+      card.appendChild(m);
+    }
+    if(item.desc) card.appendChild(el("div","desc",esc(item.desc)));
+    var links = el("div","links");
+    (item.links||[]).forEach(function(l){
+      var a = el("a", "btn" + (l.primary ? " primary" : ""), esc(l.label) + ' <span class="arrow">→</span>');
+      a.href = l.url; a.target = "_blank"; a.rel = "noopener";
+      links.appendChild(a);
+    });
+    card.appendChild(links);
+    return card;
+  }
+
+  function renderCategory(cat){
+    var section = el("section", "tone-" + cat.tone);
+    var head = el("div","section-head");
+    var headL = el("div");
+    head.appendChild(el("div","ico",esc(cat.icon)));
+    headL.appendChild(el("h2","",esc(cat.title)));
+    if(cat.subtitle) headL.appendChild(el("div","sub",esc(cat.subtitle)));
+    head.appendChild(headL);
+    head.appendChild(el("div","bar"));
+    section.appendChild(head);
+
+    var grid = el("div","grid");
+    var isFeature = (cat.id === "highlight");
+    (cat.items||[]).forEach(function(item){ grid.appendChild(renderCard(item, isFeature)); });
+    section.appendChild(grid);
+    return section;
+  }
+
+  function renderRefs(refs){
+    var box = el("section","refs");
+    box.appendChild(el("h3","", "📎 数据来源与参考入口"));
+    var list = el("div","ref-list");
+    (refs||[]).forEach(function(r){
+      var a = el("a","btn",esc(r.label));
+      a.href = r.url; a.target = "_blank"; a.rel = "noopener";
+      list.appendChild(a);
+    });
+    box.appendChild(list);
+    return box;
+  }
+
+  function fmtTime(iso){
+    try{
+      var d = new Date(iso);
+      if(isNaN(d.getTime())) return iso;
+      var p = function(n){return n<10?"0"+n:n;};
+      return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())+" "+p(d.getHours())+":"+p(d.getMinutes());
+    }catch(e){ return iso; }
+  }
+
+  function renderAll(data){
+    var main = document.getElementById("main");
+    main.innerHTML = "";
+    (data.categories||[]).forEach(function(cat){ main.appendChild(renderCategory(cat)); });
+    if(data.refs && data.refs.length) main.appendChild(renderRefs(data.refs));
+
+    renderStats(data.stats);
+
+    // updated badge
+    var ub = document.getElementById("updated");
+    ub.innerHTML = "";
+    ub.appendChild(el("span","tag-live","LIVE"));
+    ub.appendChild(document.createTextNode(" 数据自动同步 · 最后更新：" + fmtTime(data.meta && data.meta.generated_at)));
+    if(data.meta && data.meta.window){
+      ub.appendChild(document.createTextNode(" · 窗口 " + esc(data.meta.window.from) + " ~ " + esc(data.meta.window.to)));
+    }
+
+    // footer / ICP
+    var fw = document.getElementById("footer");
+    fw.style.display = "";
+    var icp = data.meta && data.meta.icp ? data.meta.icp : "鄂ICP备2025092414号-2";
+    var icpUrl = data.meta && data.meta.icp_url ? data.meta.icp_url : "https://beian.miit.gov.cn/";
+    document.getElementById("icp").innerHTML = '<span>🌐</span> <a href="'+esc(icpUrl)+'" target="_blank" rel="noopener">'+esc(icp)+'</a>';
+    document.getElementById("copy").textContent = "© " + new Date().getFullYear() + " · 活动信息整理自 WaytoAGI 飞书知识库，最终以各活动详情页为准";
+  }
+
+  function fail(msg){
+    var s = document.getElementById("status");
+    s.innerHTML = '<span class="big">⚠️</span>' + esc(msg) +
+      '<div class="hint">提示：本页通过 <code>activities.json</code> 加载数据。' +
+      '若直接双击打开（<code>file://</code>）被浏览器拦截，请用本地 HTTP 服务器预览，或部署后再访问。' +
+      '在项目根目录运行 <code>uv run --no-project --with http.server python -m http.server 8080</code> 即可。</div>';
+  }
+
+  function load(){
+    // cache-busting: 每次打开都拉最新 JSON
+    var url = DATA_URL + "?t=" + Date.now();
+    fetch(url, {cache:"no-store"})
+      .then(function(r){
+        if(!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(function(data){
+        if(!data || !data.categories) throw new Error("数据格式异常");
+        renderAll(data);
+      })
+      .catch(function(e){
+        fail("无法加载活动数据：" + (e && e.message ? e.message : e));
+      });
+  }
+
+  if(document.getElementById("status")) load();
+})();
+</script>
+
+</body>
+</html>

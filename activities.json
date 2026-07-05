@@ -1,0 +1,623 @@
+{
+  "meta": {
+    "title": "WaytoAGI 活动整理",
+    "space_id": "7226178700923011075",
+    "space_url": "https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb",
+    "generated_at": "2026-07-05T22:48:29.151Z",
+    "window": {
+      "note": "覆盖近期 + 未来一个月活动",
+      "from": "2026-06-05",
+      "to": "2026-08-06"
+    },
+    "icp": "鄂ICP备2025092414号-2",
+    "icp_url": "https://beian.miit.gov.cn/"
+  },
+  "stats": [
+    {
+      "n": "6",
+      "l": "主题分类"
+    },
+    {
+      "n": "35+",
+      "l": "活动条目"
+    },
+    {
+      "n": "6",
+      "l": "近期重点活动"
+    },
+    {
+      "n": "8",
+      "l": "训练营期数"
+    }
+  ],
+  "categories": [
+    {
+      "id": "highlight",
+      "icon": "🌟",
+      "tone": "opc",
+      "title": "近期与未来重点活动",
+      "subtitle": "2026-06-28 ~ 08-06 · 官方整理推荐 + WAIC 2026",
+      "items": [
+        {
+          "tag": "全球大会 · 新增",
+          "new": true,
+          "title": "WAIC 2026 · 世界人工智能大会",
+          "date": "2026/07/17",
+          "location": "上海",
+          "desc": "10万㎡展区、140场论坛、1100家展商、1400位嘉宾。WaytoAGI 作为合作伙伴参与，组队逛展 + WAIC 快闪群。",
+          "links": [
+            {
+              "label": "活动详情",
+              "url": "https://waytoagi.feishu.cn/wiki/Dq0fwcJ10iOYRnkM9r6cv3kqnbg",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "线下黑客松",
+          "new": true,
+          "title": "Adventure X 2026 · 杭州线下黑客松",
+          "date": "2026/07/22 - 07/26",
+          "location": "杭州 · 湖畔创研中心 / 未来科技城",
+          "desc": "五天时间从 0 到 1 做出真实作品，现场提供奖金、补贴、软硬件支持与曝光资源。",
+          "links": [
+            {
+              "label": "报名",
+              "url": "http://adventure-x.org/",
+              "primary": true
+            },
+            {
+              "label": "黑客松专栏",
+              "url": "https://waytoagi.feishu.cn/wiki/M4e0wlRFDiG2h7kGsvEc0zWcnlZ"
+            }
+          ]
+        },
+        {
+          "tag": "OPC 共创",
+          "new": true,
+          "title": "全球 OPC 共创节：AI 创造者年度大派对",
+          "date": "2026/07/01 - 07/04",
+          "location": "北京 · 国家会议中心 E1 馆",
+          "desc": "汇聚企业、媒体、创作者与开发者，含黑客松、工作坊、大咖分享；WaytoAGI 参展共创。",
+          "links": [
+            {
+              "label": "报名",
+              "url": "http://opc.nexai.club/",
+              "primary": true
+            },
+            {
+              "label": "OPC 专栏",
+              "url": "https://waytoagi.feishu.cn/wiki/CxeVwDLlIij3z3kJr5Ec6MjGndh"
+            }
+          ]
+        },
+        {
+          "tag": "亲子 AI",
+          "title": "第 25 期 AI 切磋「小」会 · 亲子 AI 专场",
+          "date": "2026/06/28 下午",
+          "location": "线上 + 线下 · 全国多城同步",
+          "desc": "门槛不是会不会写代码，而是愿不愿意和孩子一起做点东西。方向生活化：家庭、亲子创作、学习辅助、暑假作品。",
+          "links": [
+            {
+              "label": "报名",
+              "url": "https://waytoagi.feishu.cn/share/base/form/shrcn8hmFNjeQ4hkXNZQHcPoXee",
+              "primary": true
+            },
+            {
+              "label": "活动详情",
+              "url": "https://waytoagi.feishu.cn/wiki/OE9ww1Ox7if1qZkcx3cccww8nce"
+            }
+          ]
+        },
+        {
+          "tag": "出海 · 日本",
+          "title": "IVS2026 · 京都创业现场",
+          "date": "2026/07/01 - 07/03",
+          "location": "日本 · 京都",
+          "desc": "适合关心出海、日本市场、创业生态的人。WaytoAGI 作为参展社区到场，组织京都组团逛展。",
+          "links": [
+            {
+              "label": "活动官网",
+              "url": "https://www.ivs.events",
+              "primary": true
+            },
+            {
+              "label": "免票申请",
+              "url": "https://4s.link/en/tickets/f25a14aa-5374-4054-87b2-4f88c1e8fd23"
+            }
+          ]
+        },
+        {
+          "tag": "在线分享",
+          "new": true,
+          "title": "未来硅世界 Vol18 · AI 与新玩法使用技巧大盘点",
+          "date": "2026/07/04",
+          "location": "线上",
+          "desc": "AI 新玩法与使用技巧的集中盘点分享会。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/UIC2wb0xBiOnsfkSAprc45ZQnwe",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camp",
+      "icon": "🎓",
+      "tone": "camp",
+      "title": "AI 训练营系列",
+      "subtitle": "持续招募中 · 第一~七期 + 线下 DemoDay",
+      "items": [
+        {
+          "tag": "第七期 · 新开",
+          "new": true,
+          "title": "AI 硬件基础训练营",
+          "date": "发布 06/16 · 更新 07/05",
+          "desc": "最新一期训练营，面向 AI 硬件入门与实操。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/YUfhwbwdUiYXtYkCru7cfKaGnWb",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "第六期",
+          "title": "IP 影视创作训练营",
+          "date": "更新 06/24",
+          "desc": "围绕 IP 影视创作的实战训练营，含课程答疑与作品产出。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/AbEkwQJpUitwx1k2NdncQywxnhc",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "第五期",
+          "title": "OpenClaw 小龙虾训练营",
+          "date": "更新 06/06",
+          "desc": "基于 OpenClaw 生态的实战训练营。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/WewVwPVkyipyaCka7twcwPZMnJf",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "第四期",
+          "title": "Vibe Coding 实战训练营",
+          "date": "更新 06/06",
+          "desc": "面向「氛围编程」与 AI 协作开发的实战训练营。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/MSt8wNWUii8q4ZkD1okcrbTfnU9",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "第三期",
+          "title": "AI 短剧训练营",
+          "date": "更新 06/06",
+          "desc": "AI 短剧创作全流程实战。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/D1hmwopPCiv4VikbiA7c2uXEnOb",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "第二期",
+          "title": "Agent 智能体实战训练营",
+          "date": "往期",
+          "desc": "Agent 智能体方向的实战训练营。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/LMe6w2HMCiCU1DkxCKkcAbs7n2f",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "第一期",
+          "title": "n8n 零基础训练营",
+          "date": "往期",
+          "desc": "n8n 工作流自动化的零基础入门训练营。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/S5dgwncLTiZvCOkeBdWcxOsKngg",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "线下",
+          "title": "WaytoAGI 训练营 · 线下 DemoDay 第一期",
+          "date": "线下活动",
+          "desc": "训练营线下的 DemoDay 集中展示活动。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/WoE9wT3U0iH3TmkvrdscouQDnFg",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "总入口",
+          "title": "WaytoAGI 训练营（全部期数）",
+          "date": "总览入口",
+          "desc": "训练营系列总入口与学员须知。",
+          "links": [
+            {
+              "label": "进入总入口",
+              "url": "https://waytoagi.feishu.cn/wiki/J9p1w8WLtiuEj3kUsQdcuHDOnCe",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learn",
+      "icon": "💡",
+      "tone": "learn",
+      "title": "晚 8 点共学 · 沙龙纪要",
+      "subtitle": "每周线上共学 · 近期纪要已发布",
+      "items": [
+        {
+          "tag": "共学纪要",
+          "new": true,
+          "title": "07-02 · 在秒哒，开启暑假创造计划！",
+          "date": "2026/07/02",
+          "desc": "暑假创造计划的开启共学，含 WaytoAGI 晚 8 点共学 2026 年 7 月 2 日纪要。",
+          "links": [
+            {
+              "label": "阅读纪要",
+              "url": "https://waytoagi.feishu.cn/wiki/E1Emw8nWki8fclkgOracwjmhnsf",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "共学纪要",
+          "new": true,
+          "title": "06-25 · 揭秘 Alice 的 AI 原生产品设计",
+          "date": "2026/06/25 · 更新 07/04",
+          "desc": "从信任到羁绊：拆解 AI 原生产品的设计哲学。",
+          "links": [
+            {
+              "label": "阅读纪要",
+              "url": "https://waytoagi.feishu.cn/wiki/Zl1wwaJufibW5Rk5hmCcPYQhnWK",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "日历",
+          "title": "社区共学日历",
+          "date": "滚动更新",
+          "desc": "WaytoAGI 晚 8 点共学的完整日程表（Sheet）。",
+          "links": [
+            {
+              "label": "查看日历",
+              "url": "https://waytoagi.feishu.cn/wiki/UET1wIVi7i8DhSkriNBcIHEKnmc",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "栏目入口",
+          "title": "晚 8 点共学（栏目总入口）",
+          "date": "常设栏目",
+          "desc": "晚 8 点共学栏目根节点，含历期纪要与日历。",
+          "links": [
+            {
+              "label": "进入栏目",
+              "url": "https://waytoagi.feishu.cn/wiki/UKqNw8Un0iaCsXkECfCcNkl0nGc",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "往期",
+          "title": "05-16 · AI 产品先锋说（新栏目首发）",
+          "date": "2026/05/16",
+          "desc": "0 技术背景到手搓 AI 小产品：普通人如何用 AI 扩展个人能力边界。",
+          "links": [
+            {
+              "label": "阅读纪要",
+              "url": "https://waytoagi.feishu.cn/wiki/KnTUwItVfinsk6k1h7xcdJubn5d",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contest",
+      "icon": "🏆",
+      "tone": "contest",
+      "title": "AI 创作大赛与挑战",
+      "subtitle": "进行中 · 含近一个月新启动赛项",
+      "items": [
+        {
+          "tag": "新启动",
+          "new": true,
+          "title": "光帆杯 AIGC 出海大挑战",
+          "date": "启动 06/19",
+          "desc": "百万激励优质 AI 内容创作者，聚焦 AIGC 出海方向。",
+          "links": [
+            {
+              "label": "查看规则",
+              "url": "https://waytoagi.feishu.cn/wiki/LqzxwCZmiilE5YkWHlyc4ogmn2c",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "电商悬赏",
+          "title": "千问 × 淘宝「悬赏」",
+          "date": "奖金池",
+          "desc": "用更好的模型，解决电商经营难题。",
+          "links": [
+            {
+              "label": "参与悬赏",
+              "url": "https://waytoagi.feishu.cn/wiki/S5R3w4oTNiB9iHkRBxScXsA5nPc",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "图像/视频",
+          "title": "AI 图像视频大赛",
+          "date": "持续征集",
+          "desc": "AI 图像与视频创作的常设赛事。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/NFxtw2ZCtiX5oQkEKy2ciRFNntg",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "音乐",
+          "title": "AI 音乐比赛",
+          "date": "持续征集",
+          "desc": "AI 音乐创作的常设赛事。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/XqU4wkOiziaxcdknknIcTrranVe",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "征集令",
+          "title": "TBox 神仙用法征集令",
+          "date": "用法征集",
+          "desc": "收集 TBox 的「神仙用法」与创意场景。",
+          "links": [
+            {
+              "label": "参与征集",
+              "url": "https://waytoagi.feishu.cn/wiki/PXXtw2Mh9iniz4koK9AcCZOJnjh",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "总入口",
+          "title": "🏆 AI 创作大赛（总览）",
+          "date": "含比赛列表 Sheet",
+          "desc": "所有 AI 赛事与比赛的汇总入口。",
+          "links": [
+            {
+              "label": "进入总览",
+              "url": "https://waytoagi.feishu.cn/wiki/BK95wQC4git7mPkSNXAcBLZSnzb",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "icon": "🎙️",
+      "tone": "brand",
+      "title": "品牌栏目 · 共创项目",
+      "subtitle": "长期运营的社区栏目与共创计划",
+      "items": [
+        {
+          "tag": "专栏",
+          "title": "OPC 专栏",
+          "desc": "OPC 生态共创内容合集。",
+          "links": [
+            {
+              "label": "进入专栏",
+              "url": "https://waytoagi.feishu.cn/wiki/CxeVwDLlIij3z3kJr5Ec6MjGndh",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "播客",
+          "title": "AI 知声",
+          "desc": "WaytoAGI 社区的音频/播客栏目。",
+          "links": [
+            {
+              "label": "收听",
+              "url": "https://waytoagi.feishu.cn/wiki/GBC2wAP4HiSoqekw8ydcLFDon8e",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "入门课",
+          "title": "锦上添花 · 极速入门 AI 第一课",
+          "desc": "面向新手的 AI 入门第一课。",
+          "links": [
+            {
+              "label": "开始学习",
+              "url": "https://waytoagi.feishu.cn/wiki/JYlXwnGbTinxS4kni00cFmT6nXd",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "展演",
+          "title": "鹿演栏目",
+          "desc": "社区展演类品牌栏目。",
+          "links": [
+            {
+              "label": "查看",
+              "url": "https://waytoagi.feishu.cn/wiki/HsVcw1bkfiSS1ckRPH2clQLknbg",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "教育",
+          "title": "AI 教育火种车",
+          "desc": "面向教育场景的 AI 普惠项目。",
+          "links": [
+            {
+              "label": "查看",
+              "url": "https://waytoagi.feishu.cn/wiki/E2VrwirVFiybsSkYUIocaHsLn9c",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "短剧",
+          "title": "AIGC 短剧《街机恐龙：跨界天命人》",
+          "desc": "社区出品的 AIGC 短剧预告片首爆。",
+          "links": [
+            {
+              "label": "观看",
+              "url": "https://waytoagi.feishu.cn/wiki/Mot8wWhfqiIzW4ktPkEcYU7Jnfd",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coop",
+      "icon": "🤝",
+      "tone": "coop",
+      "title": "战略合作 · 行业大会",
+      "subtitle": "生态合作、调研与行业大会",
+      "items": [
+        {
+          "tag": "战略合作",
+          "title": "WaytoAGI × 学习强国 AI 生态战略合作",
+          "desc": "双方达成 AI 生态层面的战略合作。",
+          "links": [
+            {
+              "label": "查看",
+              "url": "https://waytoagi.feishu.cn/wiki/VnZHwS5uqioMPJkR6WpcDd6hnbb",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "行业调研",
+          "title": "State of Vibe 2025 · 中国 Vibe 创作生态调研",
+          "desc": "启动并面向社区征集的 Vibe 创作生态调研。",
+          "links": [
+            {
+              "label": "参与调研",
+              "url": "https://waytoagi.feishu.cn/wiki/K8wSwSGYqiJvfgkp9scc1Z2unLb",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "培训班",
+          "title": "第四届全国人形机器人前沿技术培训班",
+          "desc": "关于举办第四届全国人形机器人前沿技术培训班的通知。",
+          "links": [
+            {
+              "label": "查看通知",
+              "url": "https://waytoagi.feishu.cn/wiki/PCA2wopepizQTsk7wT4ceVCWnrf",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "全球大会",
+          "title": "AGI HORIZON · 全球 AI 大会（东京）",
+          "desc": "2026/04/08 定档东京的全球 AI 大会，WaytoAGI 参与。",
+          "links": [
+            {
+              "label": "查看",
+              "url": "https://waytoagi.feishu.cn/wiki/K6fQwad5nit8fGk9AjzcsWKdnob",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "线下",
+          "title": "WaytoAGI 中国香港首秀",
+          "desc": "现场聊 AI 在 4 大领域的落地实践。",
+          "links": [
+            {
+              "label": "查看",
+              "url": "https://waytoagi.feishu.cn/wiki/AMLtwL5RVitvCVktzaMchDGxnVh",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "聚会",
+          "title": "AIFUT 大会 After Party 报名",
+          "desc": "AIFUT 大会期间的社区 After Party 报名表。",
+          "links": [
+            {
+              "label": "报名",
+              "url": "https://waytoagi.feishu.cn/wiki/PjTWwX9Pcix2vZkPnjEc315rnWe",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "refs": [
+    {
+      "label": "「近期活动整理」官方原文",
+      "url": "https://waytoagi.feishu.cn/wiki/FlC1wcTE6iGzfgknhRFcqot9nVd"
+    },
+    {
+      "label": "近期活动汇总（5/29-6/7）",
+      "url": "https://waytoagi.feishu.cn/wiki/Hg66wZDoci0vZtkUB9tc2TI5nFd"
+    },
+    {
+      "label": "近期活动（多维表格）",
+      "url": "https://waytoagi.feishu.cn/wiki/XisOwZUyGi78URkgbmOcvaJQnOg"
+    },
+    {
+      "label": "社区共创项目及比赛",
+      "url": "https://waytoagi.feishu.cn/wiki/KexVwLKhYiHm7bk2IL9cym0WnTb"
+    },
+    {
+      "label": "从这里启程（知识库首页）",
+      "url": "https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb"
+    }
+  ]
+}
