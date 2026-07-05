@@ -54,8 +54,8 @@ www.leige.site/
 > 直接双击打开（`file://` 协议）会被浏览器 CORS 拦截，**必须用本地 HTTP 服务器预览**：
 
 ```bash
-# Python（本机用 uv 管理）
-uv run --no-project --with http.server python -m http.server 8080
+# Python（本机用 uv 管理；http.server 是标准库，无需 --with）
+uv run --no-project python -m http.server 8080
 
 # 或 Node
 npx serve .
