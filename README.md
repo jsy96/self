@@ -16,6 +16,7 @@
 
 ```
 www.leige.site/
+├── index.html                 # 站点首页（个人主页 · 板块导航）
 ├── waytoagi-activities.html   # 活动展示页（数据驱动，fetch activities.json 动态渲染）
 ├── activities.json            # 活动数据源（结构化，可被脚本自动刷新）
 ├── sync-activities.js         # 数据同步脚本（lark-cli 拉取飞书知识库 → 刷新 activities.json）
@@ -32,6 +33,21 @@ www.leige.site/
 > 但仍保留在 git 历史 `HEAD` 中，可随时通过 `git checkout HEAD -- index.html css/ js/` 恢复。
 
 ## 🎮 页面内容
+
+### index.html（站点首页 · 个人主页）
+
+老小孩 leige 的个人主页，深色 hero + 板块卡片导航，分以下板块：
+
+| 板块 | 链接 |
+| --- | --- |
+| 🍳 Gitee 主页 | <https://gitee.com/jsy96> |
+| 🐙 GitHub 主页 | <https://github.com/jsy96> |
+| 🔧 AI 硬件 | 建设中（即将上线） |
+| 🐾 宠物乐园 | <https://pet.leige.online> |
+| 🎮 找规律游戏 | <https://game.leige.online> |
+| 🌟 WaytoAGI 活动聚合 | [waytoagi-activities.html](waytoagi-activities.html)（站内） |
+
+页脚悬挂 ICP 备案号，与 [waytoagi-activities.html](waytoagi-activities.html) 共用同一套视觉语言（深色 + 紫青渐变 + 卡片网格）。
 
 ### waytoagi-activities.html
 

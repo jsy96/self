@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老小孩 · leige 的个人主页</title>
+<meta name="description" content="老小孩（leige）的个人主页 —— gitee/github、AI 硬件、宠物乐园、找规律游戏，还有 WaytoAGI 活动聚合。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧒</text></svg>">
+<style>
+  :root{
+    --bg:#0b1020; --bg-2:#111a33;
+    --surface:#ffffff; --surface-2:#f6f8fc;
+    --ink:#1a2238; --ink-2:#5a6478; --line:#e6eaf2;
+    --brand:#6c5ce7; --brand-2:#8e7bff; --accent:#ff7a45;
+    --green:#1abc9c; --blue:#3b82f6; --gold:#f5b301; --pink:#ff6b9d;
+    --radius:18px; --shadow:0 10px 30px -12px rgba(20,30,80,.18);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--surface-2);line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+
+  .hero{position:relative;color:#fff;background:radial-gradient(1200px 500px at 85% -10%, rgba(255,122,69,.35), transparent 60%),radial-gradient(900px 500px at 5% 110%, rgba(108,92,231,.45), transparent 55%),linear-gradient(180deg,#0b1020 0%, #131c3a 100%);overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);background-size:42px 42px;mask-image:radial-gradient(ellipse at 50% 0%, #000 30%, transparent 75%);pointer-events:none}
+  .hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:84px 24px 72px;text-align:center}
+  .avatar{width:96px;height:96px;border-radius:24px;margin:0 auto 22px;display:grid;place-items:center;font-size:48px;background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);box-shadow:0 12px 30px -8px rgba(108,92,231,.55)}
+  h1{font-size:clamp(32px,5.5vw,54px);line-height:1.1;margin:0 0 14px;letter-spacing:-.5px;font-weight:800}
+  h1 .grad{background:linear-gradient(92deg,#fff 0%, #ffd9c2 40%, #b7a6ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{font-size:17px;color:#c8d0e8;max-width:640px;margin:0 auto}
+  .hero-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:24px}
+  .hero-tags span{font-size:12.5px;color:#cdd6f4;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+
+  .wrap{max-width:1080px;margin:0 auto;padding:48px 24px 8px}
+  .section-head{display:flex;align-items:center;gap:14px;margin:0 0 22px}
+  .section-head .ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:var(--surface);box-shadow:var(--shadow)}
+  .section-head h2{font-size:24px;margin:0;font-weight:800}
+  .section-head .sub{font-size:13px;color:var(--ink-2);margin-top:2px}
+  .section-head .bar{flex:1;height:1px;background:var(--line)}
+
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+  .card{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;overflow:hidden}
+  .card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -16px rgba(20,30,80,.28);border-color:#d7def0}
+  .card .icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:26px;margin-bottom:4px}
+  .card h3{font-size:18px;margin:0;font-weight:700}
+  .card .url{font-size:12.5px;color:var(--ink-2);font-family:"SFMono-Regular",ui-monospace,Menlo,Consolas,monospace;word-break:break-all}
+  .card .desc{font-size:13.5px;color:#3c465c;flex:1}
+  .card .btn{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;padding:8px 14px;border-radius:10px;margin-top:4px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;transition:filter .15s ease}
+  .card .btn:hover{filter:brightness(1.08)}
+  .card .btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+  .card .btn.ghost:hover{border-color:var(--brand);color:var(--brand)}
+  .card .arrow{transition:transform .15s ease}
+  .card .btn:hover .arrow{transform:translateX(2px)}
+  .card .badge{position:absolute;top:18px;right:18px;font-size:10.5px;font-weight:700;letter-spacing:.6px;padding:3px 9px;border-radius:6px;background:#fff5eb;color:var(--accent);border:1px solid #ffd9c2}
+
+  /* color tones */
+  .tone-gitee .icon{background:linear-gradient(135deg,#c71d23,#e83c40);color:#fff}
+  .tone-github .icon{background:linear-gradient(135deg,#24292e,#444d56);color:#fff}
+  .tone-aihw .icon{background:linear-gradient(135deg,#6c5ce7,#8e7bff);color:#fff}
+  .tone-pet .icon{background:linear-gradient(135deg,#ff6b9d,#ffa3c4);color:#fff}
+  .tone-game .icon{background:linear-gradient(135deg,#f5b301,#ffce4d);color:#3a2c00}
+  .tone-wiki .icon{background:linear-gradient(135deg,#1abc9c,#3fd4b3);color:#fff}
+
+  .feature{background:linear-gradient(180deg,#1a2342 0%, #11182f 100%);color:#fff;border-color:rgba(255,255,255,.1)}
+  .feature h3{color:#fff}
+  .feature .desc{color:#c3ccea}
+  .feature .url{color:#9fadc9}
+  .feature .btn{background:linear-gradient(135deg,var(--accent),#ff9d6c);color:#fff}
+
+  footer{margin-top:64px;background:var(--bg);color:#9aa4c2;padding:40px 24px 30px;text-align:center}
+  footer .f-links{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;margin-bottom:16px;font-size:13px}
+  footer .f-links a{color:#cdd6f4}
+  footer .f-links a:hover{color:#fff}
+  .icp{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:#9aa4c2;padding:8px 16px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+  .icp a{color:#cdd6f4;border-bottom:1px dashed rgba(255,255,255,.25)}
+  .icp a:hover{color:#fff;border-bottom-color:#fff}
+  .copy{font-size:12px;color:#6b7693;margin-top:12px}
+
+  @media (max-width:640px){
+    .hero-inner{padding:60px 18px 48px}
+    .grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="avatar">🧒</div>
+    <h1><span class="grad">老小孩 · leige</span></h1>
+    <p class="lede">一个放想法、放作品、放毛孩子、放游戏的小角落。<br>慢慢玩，认真活。</p>
+    <div class="hero-tags">
+      <span># 个人主页</span>
+      <span># AI 硬件</span>
+      <span># 宠物乐园</span>
+      <span># 找规律游戏</span>
+      <span># WaytoAGI</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 板块网格 -->
+  <div class="section-head">
+    <div class="ico">🗂️</div>
+    <div>
+      <h2>板块导航</h2>
+      <div class="sub">点击卡片进入对应站点</div>
+    </div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="grid">
+
+    <article class="card tone-gitee">
+      <div class="icon">🍳</div>
+      <h3>Gitee 主页</h3>
+      <div class="url">gitee.com/jsy96</div>
+      <p class="desc">国内代码仓库，主力推送。个人项目、脚本与站点源码都在这。</p>
+      <a class="btn" href="https://gitee.com/jsy96" target="_blank" rel="noopener">进入 Gitee <span class="arrow">→</span></a>
+    </article>
+
+    <article class="card tone-github">
+      <div class="icon">🐙</div>
+      <h3>GitHub 主页</h3>
+      <div class="url">github.com/jsy96</div>
+      <p class="desc">国际代码镜像。同步部分开源项目与协作仓库。</p>
+      <a class="btn" href="https://github.com/jsy96" target="_blank" rel="noopener">进入 GitHub <span class="arrow">→</span></a>
+    </article>
+
+    <article class="card tone-aihw">
+      <span class="badge">即将上线</span>
+      <div class="icon">🔧</div>
+      <h3>AI 硬件</h3>
+      <div class="url">建设中</div>
+      <p class="desc">AI 硬件探索、上手评测与小作品。内容筹备中，敬请期待。</p>
+      <a class="btn ghost" href="#" aria-disabled="true" onclick="return false">敬请期待</a>
+    </article>
+
+    <article class="card tone-pet">
+      <div class="icon">🐾</div>
+      <h3>宠物乐园</h3>
+      <div class="url">pet.leige.online</div>
+      <p class="desc">毛孩子们的日常乐园。照片、趣事与成长记录。</p>
+      <a class="btn" href="https://pet.leige.online" target="_blank" rel="noopener">进入乐园 <span class="arrow">→</span></a>
+    </article>
+
+    <article class="card tone-game">
+      <div class="icon">🎮</div>
+      <h3>找规律游戏</h3>
+      <div class="url">game.leige.online</div>
+      <p class="desc">「老小孩找规律」—— 烧脑又上瘾的休闲小游戏，看看你能过几关。</p>
+      <a class="btn" href="https://game.leige.online" target="_blank" rel="noopener">开始游戏 <span class="arrow">→</span></a>
+    </article>
+
+  </div>
+
+  <!-- WaytoAGI 活动聚合（突出） -->
+  <div class="section-head" style="margin-top:48px">
+    <div class="ico">🪐</div>
+    <div>
+      <h2>WaytoAGI 活动聚合</h2>
+      <div class="sub">整理自 WaytoAGI 飞书知识库，每日自动同步</div>
+    </div>
+    <div class="bar"></div>
+  </div>
+
+  <article class="card feature tone-wiki">
+    <div class="icon">🌟</div>
+    <h3>WaytoAGI 近期活动整理</h3>
+    <div class="url">www.leige.site/waytoagi-activities.html</div>
+    <p class="desc">汇总 WaytoAGI 飞书知识库近期与未来一个月的活动：WAIC 2026、AI 训练营、晚 8 点共学、创作大赛、战略合作……按主题分类，数据自动刷新。</p>
+    <a class="btn" href="waytoagi-activities.html">查看活动 <span class="arrow">→</span></a>
+  </article>
+
+</main>
+
+<footer>
+  <div class="f-links">
+    <a href="https://gitee.com/jsy96" target="_blank" rel="noopener">Gitee</a>
+    <a href="https://github.com/jsy96" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://pet.leige.online" target="_blank" rel="noopener">宠物乐园</a>
+    <a href="https://game.leige.online" target="_blank" rel="noopener">找规律游戏</a>
+    <a href="waytoagi-activities.html">活动聚合</a>
+  </div>
+  <div class="icp">
+    <span>🌐</span>
+    <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鄂ICP备2025092414号-2</a>
+  </div>
+  <div class="copy">© <span id="yr"></span> 老小孩 · leige · 个人主页</div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+</body>
+</html>
