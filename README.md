@@ -45,6 +45,8 @@ www.leige.site/
 | 🔧 AI 硬件 | 建设中（即将上线） |
 | 🐾 宠物乐园 | <https://pet.leige.online> |
 | 🎮 找规律游戏 | <https://game.leige.online> |
+| 📦 舱单文件处理 | <https://dd.leige.online/> |
+| 💎 爱己美己（工作项目） | 商家端：[web](https://web.leige.online/) · [ajmj](https://ajmj.leige.online/)；超管：<https://admin.leige.online/> |
 | 🌟 WaytoAGI 活动聚合 | [waytoagi-activities.html](waytoagi-activities.html)（站内） |
 
 页脚悬挂 ICP 备案号，与 [waytoagi-activities.html](waytoagi-activities.html) 共用同一套视觉语言（深色 + 紫青渐变 + 卡片网格）。
