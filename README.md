@@ -21,6 +21,7 @@ www.leige.site/
 ├── activities.json            # 活动数据源（结构化，可被脚本自动刷新）
 ├── sync-activities.js         # 数据同步脚本（lark-cli 拉取飞书知识库 → 刷新 activities.json）
 ├── update-activities.bat      # 本地一键同步（英文，调 sync-activities.js，自动 commit + push）
+├── start.bat                   # 本地预览：双击起 HTTP 服务器（uv run python -m http.server 8080）
 ├── 0git.bat                   # 一次性：初始化仓库并推送到 Gitee（origin）
 ├── 1git.bat                   # 日常：一键 git add + commit + push（origin / Gitee，自动镜像 GitHub）
 ├── .gitignore                 # 忽略规则
@@ -68,6 +69,8 @@ www.leige.site/
 
 > ⚠️ `waytoagi-activities.html` 通过 `fetch('activities.json')` 加载数据。
 > 直接双击打开（`file://` 协议）会被浏览器 CORS 拦截，**必须用本地 HTTP 服务器预览**：
+>
+> 💡 最简单：双击 [`start.bat`](start.bat) 即可（等价于下方命令，在 8080 端口起 HTTP 服务器）。
 
 ```bash
 # Python（本机用 uv 管理；http.server 是标准库，无需 --with）
