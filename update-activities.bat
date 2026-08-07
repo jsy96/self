@@ -3,11 +3,11 @@ setlocal enabledelayedexpansion
 
 REM ============================================================
 REM  update-activities.bat
-REM  Sync WaytoAGI activities from Feishu wiki into activities.json
+REM  Sync WaytoAGI activities from Feishu wiki into activities.json,
+REM  then auto commit and push to remote.
 REM
 REM  Usage:
-REM    update-activities.bat         -> sync only
-REM    update-activities.bat push    -> sync + git commit + push
+REM    update-activities.bat         -> sync + git commit + push
 REM
 REM  Prerequisite: lark-cli user auth must be valid.
 REM    Check:   lark-cli auth status
@@ -28,33 +28,27 @@ if errorlevel 1 (
     exit /b 1
 )
 
-if /i "%~1"=="push" (
-    echo.
-    echo === Step 2/2: Committing and pushing ===
-    git add activities.json
-    git diff --cached --quiet
-    if not errorlevel 1 (
-        echo [INFO] Nothing to commit. activities.json unchanged.
-    ) else (
-        for /f %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd_HH-mm-ss"') do set "TS=%%i"
-        git commit -m "chore: sync waytoagi activities !TS!"
-        if errorlevel 1 (
-            echo [ERROR] git commit failed.
-            pause
-            exit /b 1
-        )
-        git push origin master
-        if errorlevel 1 (
-            echo [ERROR] git push failed.
-            pause
-            exit /b 1
-        )
-        echo [DONE] Synced and pushed.
-    )
+echo.
+echo === Step 2/2: Committing and pushing ===
+git add activities.json
+git diff --cached --quiet
+if not errorlevel 1 (
+    echo [INFO] Nothing to commit. activities.json unchanged.
 ) else (
-    echo.
-    echo [DONE] activities.json updated locally.
-    echo [TIP]  Run "update-activities.bat push" to also commit and push.
+    for /f %%i in ('powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd_HH-mm-ss"') do set "TS=%%i"
+    git commit -m "chore: sync waytoagi activities !TS!"
+    if errorlevel 1 (
+        echo [ERROR] git commit failed.
+        pause
+        exit /b 1
+    )
+    git push origin master
+    if errorlevel 1 (
+        echo [ERROR] git push failed.
+        pause
+        exit /b 1
+    )
+    echo [DONE] Synced and pushed.
 )
 
 echo.

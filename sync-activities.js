@@ -14,12 +14,11 @@
  *   - 发现模式：调用 lark-cli wiki +node-list 扫描 6 个活动父目录，按白/黑名单
  *     过滤后，把真正的新活动追加到对应分类，并标记 NEW。
  *
- * 身份：默认 --as user；CI 设环境变量 LARK_AS=bot（已验证 bot 可读 WaytoAGI 公开库）
+ * 身份：--as user（本地脚本同步用，依赖本机 lark-cli user 授权）
  *
  * 用法：
- *   node sync-activities.js                         # 本地快速刷新
- *   node sync-activities.js --discover              # 本地发现新活动
- *   LARK_AS=bot node sync-activities.js --discover  # CI 自动同步
+ *   node sync-activities.js                 # 本地快速刷新
+ *   node sync-activities.js --discover      # 本地发现新活动
  */
 
 "use strict";
@@ -33,7 +32,6 @@ const IS_WIN = process.platform === "win32";
 const SHELL = IS_WIN ? (process.env.SHELL || "bash") : "/bin/bash";
 
 const SPACE_ID = "7226178700923011075";
-const AS = process.env.LARK_AS || "user";
 const DATA_FILE = path.join(__dirname, "activities.json");
 const DISCOVER = process.argv.includes("--discover");
 
@@ -95,7 +93,7 @@ function tokenFromUrl(url) {
 function listChildren(parentToken) {
   try {
     const r = larkJSON(
-      `wiki +node-list --as ${AS} --space-id ${SPACE_ID} --parent-node-token ${parentToken} --page-size 50 --format json`
+      `wiki +node-list --as user --space-id ${SPACE_ID} --parent-node-token ${parentToken} --page-size 50 --format json`
     );
     return (r.data && r.data.nodes) || [];
   } catch (e) {
@@ -137,7 +135,7 @@ function main() {
     if (t) knownTokens.add(t);
   });
 
-  console.log(`[info] known tokens: ${knownTokens.size}, titles: ${knownTitles.size}, identity: ${AS}, discover: ${DISCOVER}`);
+  console.log(`[info] known tokens: ${knownTokens.size}, titles: ${knownTitles.size}, discover: ${DISCOVER}`);
 
   // 自动发现（仅 --discover 模式）
   let discovered = 0;

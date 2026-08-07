@@ -20,9 +20,7 @@ www.leige.site/
 ├── waytoagi-activities.html   # 活动展示页（数据驱动，fetch activities.json 动态渲染）
 ├── activities.json            # 活动数据源（结构化，可被脚本自动刷新）
 ├── sync-activities.js         # 数据同步脚本（lark-cli 拉取飞书知识库 → 刷新 activities.json）
-├── update-activities.bat      # 本地一键同步（英文，调 sync-activities.js，可选 push）
-├── .github/workflows/
-│   └── sync-activities.yml    # GitHub Actions 每日定时自动同步 + 推送
+├── update-activities.bat      # 本地一键同步（英文，调 sync-activities.js，自动 commit + push）
 ├── 0git.bat                   # 一次性：初始化仓库并推送到 Gitee（origin）
 ├── 1git.bat                   # 日常：一键 git add + commit + push（github + origin）
 ├── .gitignore                 # 忽略规则
@@ -113,42 +111,22 @@ npx serve .
 
 **架构**：数据与展示分离 —— [activities.json](activities.json) 是数据源，[waytoagi-activities.html](waytoagi-activities.html) 启动时 `fetch` 该 JSON 并动态渲染（带 `?t=timestamp` 缓存破坏）。只要 `activities.json` 被刷新并推送，下一次打开网页就自动呈现新内容。
 
-### 三种刷新方式
+### 两种刷新方式
 
 #### 1. 手动编辑（最简单）
 
 直接编辑 [activities.json](activities.json)，按现有 schema 增删活动卡片，刷新页面即可。
 
-#### 2. 本地一键脚本（半自动）
+#### 2. 本地一键脚本（同步 + 自动推送）
 
 ```bash
-# 仅刷新 activities.json（user 身份）
+# 同步 activities.json 并自动 git commit + push（user 身份）
 update-activities.bat
-
-# 刷新 + 自动 git commit & push
-update-activities.bat push
 ```
 
-脚本调 [sync-activities.js](sync-activities.js)，用 `lark-cli` 拉取飞书知识库节点。前置条件：本机 `lark-cli auth login` 已完成（user 身份有效）。
+脚本调 sync-activities.js，用 `lark-cli` 拉取飞书知识库节点，完成后自动 git commit 并 push 到 origin（Gitee）。前置条件：本机 `lark-cli auth login` 已完成（user 身份有效）。
 
-#### 3. GitHub Actions 每日定时（全自动，推荐生产用）
-
-[.github/workflows/sync-activities.yml](.github/workflows/sync-activities.yml) 配置了每天 UTC 03:00（北京 11:00）自动运行：
-
-1. 用 bot（应用）身份配置 lark-cli（**已验证 bot 可读 WaytoAGI 公开知识库**）
-2. 跑 `LARK_AS=bot node sync-activities.js --discover`
-3. 自动 commit & push 更新后的 `activities.json`
-
-部署站点（Cloudflare Pages / Vercel / GitHub Pages）拉到最新 commit 即生效。
-
-**前置条件**（在 GitHub 仓库 Settings → Secrets 配置）：
-
-| Secret | 说明 |
-| --- | --- |
-| `LARK_APP_ID` | 飞书应用 App ID（`cli_xxx`） |
-| `LARK_APP_SECRET` | 飞书应用 App Secret |
-
-应用需在飞书开发者后台开通 `wiki:space:read`、`wiki:node:read` 等 scope。
+> 想顺便扫描飞书知识库里的新活动节点，可先手动跑 `node sync-activities.js --discover`，再执行本脚本。
 
 ### sync-activities.js 两种模式
 
@@ -167,10 +145,9 @@ node sync-activities.js --discover    # 默认 + 扫描 6 个活动父目录，�
 
 | 身份 | 适用 | 有效期 |
 | --- | --- | --- |
-| `--as user`（默认） | 本地交互、临时刷新 | refresh token 约 60 天，过期需重新 `auth login` |
-| `--as bot`（CI） | GitHub Actions 长期自动化 | tenant_access_token 长期有效（应用凭证不失效即可） |
+| `--as user`（默认） | 本地脚本同步 | refresh token 约 60 天，过期需重新 `auth login` |
 
-> 私有知识库需把应用/用户加为成员；WaytoAGI 这类公开库，bot 可直接读。
+> 私有知识库需把用户加为成员；WaytoAGI 这类公开库可直接读。
 
 ## 📋 备案信息
 
