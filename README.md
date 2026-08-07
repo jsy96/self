@@ -22,7 +22,7 @@ www.leige.site/
 ├── sync-activities.js         # 数据同步脚本（lark-cli 拉取飞书知识库 → 刷新 activities.json）
 ├── update-activities.bat      # 本地一键同步（英文，调 sync-activities.js，自动 commit + push）
 ├── 0git.bat                   # 一次性：初始化仓库并推送到 Gitee（origin）
-├── 1git.bat                   # 日常：一键 git add + commit + push（github + origin）
+├── 1git.bat                   # 日常：一键 git add + commit + push（origin / Gitee，自动镜像 GitHub）
 ├── .gitignore                 # 忽略规则
 └── README.md                  # 本文档
 ```
@@ -87,7 +87,7 @@ npx serve .
 # 一次性初始化（推送到 Gitee）
 0git.bat
 
-# 日常更新（自动 stage + commit + push 到 github 与 origin）
+# 日常更新（自动 stage + commit + push 到 Gitee；Gitee 自动镜像到 GitHub）
 1git.bat
 # 或自定义提交信息
 1git.bat add waytoagi activities page
@@ -102,8 +102,8 @@ npx serve .
 
 远程仓库：
 
-- `origin` → <https://gitee.com/jsy96/self.git>
-- `github` → GitHub 镜像（由 `1git.bat` 推送）
+- `origin` → <https://gitee.com/jsy96/self.git>（**唯一远程**）
+- Gitee 仓库已开启自动镜像 → GitHub（[jsy96/self](https://github.com/jsy96/self)），push 到 Gitee 后自动同步，**无需单独推 GitHub**
 
 ## 🔄 自动更新机制（打开网页即最新）
 
