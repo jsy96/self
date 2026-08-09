@@ -3,7 +3,7 @@
     "title": "WaytoAGI 活动整理",
     "space_id": "7226178700923011075",
     "space_url": "https://waytoagi.feishu.cn/wiki/PFXnwBTsEiGwGGk2QQFcdTWrnlb",
-    "generated_at": "2026-08-09T03:12:37.096Z",
+    "generated_at": "2026-08-09T04:06:02.857Z",
     "window": {
       "note": "覆盖近期 + 未来一个月活动",
       "from": "2026-06-05",
@@ -268,6 +268,20 @@
               "primary": true
             }
           ]
+        },
+        {
+          "tag": "自动发现",
+          "new": true,
+          "title": "AI训练营-公众号推文",
+          "date": "",
+          "desc": "由 sync-activities.js 自动发现，建议人工补充日期与描述。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/LdUvwEy2aip8wfkalOmct0v2ngd",
+              "primary": true
+            }
+          ]
         }
       ]
     },
@@ -341,6 +355,20 @@
             {
               "label": "阅读纪要",
               "url": "https://waytoagi.feishu.cn/wiki/KnTUwItVfinsk6k1h7xcdJubn5d",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "自动发现",
+          "new": true,
+          "title": "智能纪要：08-04 | adventureX黑客松选手访谈第三期\n📌【Pocket Friend】项链捕捉线下相遇，把每一次擦肩而过的偶遇收藏进像素社区小岛\n【山雀 · Parus】多模态 AI 观鸟眼镜，记录每一场与飞鸟的不期而遇，收藏成专属观鸟记录册\n\n🎤 访谈主持人\n· 魏默识：大厂 FDE 工程师\n· 谢老师：WaytoAGI 教育版 · 核心共建者 WaytoAGI晚8点共学 2026年8月4日",
+          "date": "",
+          "desc": "由 sync-activities.js 自动发现，建议人工补充日期与描述。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/VV9WwHvjei3OkLkSjHqc3uKSnsd",
               "primary": true
             }
           ]
@@ -429,6 +457,34 @@
             {
               "label": "进入总览",
               "url": "https://waytoagi.feishu.cn/wiki/BK95wQC4git7mPkSNXAcBLZSnzb",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "自动发现",
+          "new": true,
+          "title": "小有可为AI向善创新挑战赛，启程！",
+          "date": "",
+          "desc": "由 sync-activities.js 自动发现，建议人工补充日期与描述。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/Tf8uwpUmVinN5ukhU64c04e8nnb",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "自动发现",
+          "new": true,
+          "title": "招募在探索AI+工业的你丨6万奖金等你来！",
+          "date": "",
+          "desc": "由 sync-activities.js 自动发现，建议人工补充日期与描述。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/UB8uwMlyjiKrNCkJQ7PcSiN0nNe",
               "primary": true
             }
           ]
@@ -591,6 +647,20 @@
             {
               "label": "报名",
               "url": "https://waytoagi.feishu.cn/wiki/PjTWwX9Pcix2vZkPnjEc315rnWe",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "tag": "自动发现",
+          "new": true,
+          "title": "IVS 2026",
+          "date": "",
+          "desc": "由 sync-activities.js 自动发现，建议人工补充日期与描述。",
+          "links": [
+            {
+              "label": "查看详情",
+              "url": "https://waytoagi.feishu.cn/wiki/LLs9wSnB9ibysYkkuW3cONn2nyh",
               "primary": true
             }
           ]
