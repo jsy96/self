@@ -1,7 +1,7 @@
 # 老小孩 · leige 个人站点（www.leige.site）
 
 > 老小孩（leige）的个人站点目录 —— 部署在 **[www.leige.site](https://www.leige.site)**。
-> 关联子站：**[老小孩找规律](https://game.leige.online)**。
+> 关联子站：**[大狗Tap · 大狗叫-哈基米-叮咚鸡](https://bigdog-two.vercel.app/)**。
 
 ---
 
@@ -43,7 +43,7 @@ www.leige.site/
 | 🐙 GitHub 主页 | <https://github.com/jsy96> |
 | 🔧 AI 硬件 | 建设中（即将上线） |
 | 🐾 宠物乐园 | <https://pet.leige.online> |
-| 🎮 找规律游戏 | <https://game.leige.online> |
+| 🐶 大狗叫-哈基米-叮咚鸡 | <https://bigdog-two.vercel.app/> |
 | 📦 舱单文件处理 | <https://dd.leige.online/> |
 | 💎 爱己美己（工作项目） | 商家端：[web](https://web.leige.online/) · [ajmj](https://ajmj.leige.online/)；超管：<https://admin.leige.online/> |
 | 🌟 WaytoAGI 活动聚合 | [waytoagi-activities.html](waytoagi-activities.html)（站内） |
@@ -101,7 +101,7 @@ npx serve .
 | 域名 | 用途 |
 | --- | --- |
 | `www.leige.site` | 本站点 |
-| `game.leige.online` | 「老小孩找规律」游戏站 |
+| `bigdog-two.vercel.app` | 「大狗Tap」节奏点击游戏（大狗叫-哈基米-叮咚鸡） |
 
 远程仓库：
 
