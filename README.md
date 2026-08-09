@@ -20,7 +20,7 @@ www.leige.site/
 ├── waytoagi-activities.html   # 活动展示页（数据驱动，fetch activities.json 动态渲染）
 ├── activities.json            # 活动数据源（结构化，可被脚本自动刷新）
 ├── sync-activities.js         # 数据同步脚本（lark-cli 拉取飞书知识库 → 刷新 activities.json）
-├── update-activities.bat      # 本地一键同步（英文，调 sync-activities.js，自动 commit + push）
+├── update-activities.bat      # 本地一键同步（调 sync-activities.js --discover 发现新活动，自动 commit + push）
 ├── start.bat                   # 本地预览：双击起 HTTP 服务器（uv run python -m http.server 8080）
 ├── 0git.bat                   # 一次性：初始化仓库并推送到 Gitee（origin）
 ├── 1git.bat                   # 日常：一键 git add + commit + push（origin / Gitee，自动镜像 GitHub）
@@ -127,9 +127,9 @@ npx serve .
 update-activities.bat
 ```
 
-脚本调 sync-activities.js，用 `lark-cli` 拉取飞书知识库节点，完成后自动 git commit 并 push 到 origin（Gitee）。前置条件：本机 `lark-cli auth login` 已完成（user 身份有效）。
+脚本调 `sync-activities.js --discover`，用 `lark-cli` 扫描飞书知识库活动父目录、发现新节点并刷新 `activities.json`，完成后自动 git commit 并 push 到 origin（Gitee）。前置条件：本机 `lark-cli auth login` 已完成（user 身份有效）。
 
-> 想顺便扫描飞书知识库里的新活动节点，可先手动跑 `node sync-activities.js --discover`，再执行本脚本。
+> 已默认开启发现模式（`--discover`），无需再手动跑。注意：发现新节点依赖 user 身份有效；若授权过期（refresh token 失效），扫描会静默返回 0 条，脚本仍会正常提交（仅刷新时间戳）——表现就是"跑了但没更新"。用 `lark-cli auth status` 查看状态，过期用 `lark-cli auth login --domain all` 刷新。
 
 ### sync-activities.js 两种模式
 

@@ -242,7 +242,7 @@
     s.innerHTML = '<span class="big">⚠️</span>' + esc(msg) +
       '<div class="hint">提示：本页通过 <code>activities.json</code> 加载数据。' +
       '若直接双击打开（<code>file://</code>）被浏览器拦截，请用本地 HTTP 服务器预览，或部署后再访问。' +
-      '在项目根目录运行 <code>uv run --no-project --with http.server python -m http.server 8080</code> 即可。</div>';
+      '在项目根目录运行 <code>uv run --no-project python -m http.server 8080</code> 即可。</div>';
   }
 
   function load(){

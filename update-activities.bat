@@ -17,8 +17,8 @@ REM ============================================================
 cd /d "%~dp0"
 
 echo.
-echo === Step 1/2: Syncing activities from Feishu wiki ===
-node sync-activities.js
+echo === Step 1/2: Syncing & discovering activities from Feishu wiki ===
+node sync-activities.js --discover
 if errorlevel 1 (
     echo.
     echo [ERROR] sync failed. lark-cli user auth may be expired.
